@@ -28,7 +28,7 @@ sub handle_cmd {
     my $state = App::lcpan::_init(\%args, 'ro');
     my $dbh = $state->{dbh};
 
-    my $res = App::lcpan::rdeps(%args, modules => [$mod], rel => 'requires', phase => 'x_benchmarks');
+    my $res = App::lcpan::rdeps(%args, modules => [$mod], rel => 'x_benchmarks', phase => 'x_benchmarks');
     return $res if $res->[0] != 200;
     return [200, "OK", []] unless @{ $res->[2] };
 

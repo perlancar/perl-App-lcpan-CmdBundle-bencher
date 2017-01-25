@@ -31,7 +31,7 @@ sub handle_cmd {
     return $res if $res->[0] != 200;
     return [200, "OK", []] unless @{ $res->[2] };
 
-    App::lcpan::deps(%args, modules => $res->[2], rel => 'requires', phase => 'x_benchmarks', flatten => 1);
+    App::lcpan::deps(%args, modules => $res->[2], rel => 'x_benchmarks', phase => 'x_benchmarks', flatten => 1);
 }
 
 1;
