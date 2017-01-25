@@ -1,4 +1,4 @@
-package App::lcpan::Cmd::bencher_scenario_for_mod;
+package App::lcpan::Cmd::bencher_benched_mods;
 
 # DATE
 # VERSION
