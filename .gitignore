@@ -2,3 +2,4 @@ App-lcpan-CmdBundle-bencher-*
 .build
 *~
 nytprof*
+.DS_Store
